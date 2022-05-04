@@ -2,14 +2,16 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TUP LC2 - TP Integrador</title>
+    <title>Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
   </head>
   <body>
     <header>
       <h1>
+        <img src="img/img.png" alt="Clima APP">
         <span>Clima App</span>
       </h1>
       <nav>
@@ -27,7 +29,7 @@
         <div class="card">
           <p>
             Esta App te permite consultar el clima de una ciudad en particular
-            utilizando la API de <a href="">OpenWeatherMap</a>.
+            utilizando la API de <a target="_blank" href="https://openweathermap.org/api">OpenWeatherMap</a>.
           </p>
           <p>
             Para poder consultar el clima, primero deberá
@@ -38,12 +40,12 @@
         </div>
       </section>
       <section>
-          <form action="">
-              <span>Nombre: </span><input type="text" name="" id="">
+          <form action="" method="post">
+              <label for="nombre">Nombre: </label> <input type="text" name="nombre" id="nombre"> 
               <br>
-              <span>Email: </span><input type="text" name="" id="">
+              <label for="email">Email: </label> <input type="email" name="email" id="email"> 
               <br>
-              <span>Mensaje: </span><textarea name="" id="" cols="30" rows="10"></textarea>
+              <label for="mensaje">Mensaje: </label> <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
               <br>
                 <button>Limpiar</button>
                 <button>Enviar</button>
