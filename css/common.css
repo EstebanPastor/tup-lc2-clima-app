@@ -33,7 +33,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--color-theme);
+  background: var(--color-gradient);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0px 2px 0px 0px #5df2d6;
 }
 nav > ul {
   display: flex;
@@ -57,6 +60,9 @@ nav li.current-page a {
   color: var(--color-theme);
   background-color: var(--color-active);
   pointer-events: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
 }
 
 main {
@@ -91,11 +97,12 @@ main section {
 footer {
   position: fixed;
   bottom: 0px;
-  background: var(--color-theme);
+  background: var(--color-gradient);
   width: 100%;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-shadow: 0px 0px 0px 2px #5df2d6;
 }
 footer p {
   font-size: small;
@@ -104,6 +111,41 @@ footer p {
 main p {
   margin-bottom: 16px;
 }
+
+button {
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  background-color: #00594c;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+}
+
+#success {
+  background-color: #28a745;
+}
+
+#error {
+  background-color: #dc3545;
+}
+
+#warning {
+  background-color: #ffc107;
+}
+
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
   main {

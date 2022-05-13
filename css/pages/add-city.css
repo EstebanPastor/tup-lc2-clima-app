@@ -1,0 +1,9 @@
+#formcity {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.form-group {
+    margin: 10px;
+}

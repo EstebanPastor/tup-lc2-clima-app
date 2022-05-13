@@ -7,6 +7,7 @@
     <title>Clima App</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/help.css">
   </head>
   <body>
     <header>
@@ -39,18 +40,20 @@
           </p>
         </div>
       </section>
-      <section>
+      <section id="help">
           <form action="" method="post">
-              <label for="nombre">Nombre: </label> <input type="text" name="nombre" id="nombre"> 
-              <br>
-              <label for="email">Email: </label> <input type="email" name="email" id="email"> 
-              <br>
-              <label for="mensaje">Mensaje: </label> <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-              <br>
-                <button>Limpiar</button>
-                <button>Enviar</button>
+            <div class="form-group"><label for="nombre">Nombre: </label></div>
+            <div class="form-group"><input type="text" name="nombre" id="nombre"> </div>
+            <div class="form-group"><label for="email">Email: </label></div>
+            <div class="form-group"><input type="email" name="email" id="email"> </div>
+            <div class="form-group"><label for="mensaje">Mensaje: </label></div>
+            <div class="form-group"><textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea></div>
+            <div class="btn-group"><button>Limpiar</button> <button>Enviar</button></div>
+            <div id="error" class="message">Ingrese un Email válido:</div>
           </form>
+          
       </section>
+      
     </main>
     <footer>
       <p>Desarrollado con ♥ - LC2</p>

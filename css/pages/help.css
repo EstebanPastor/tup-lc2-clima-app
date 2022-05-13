@@ -1,0 +1,24 @@
+#help {
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    text-align: left;
+}
+
+.form-group {
+    margin: 5px;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+}
