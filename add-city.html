@@ -27,18 +27,22 @@
     <main>
       <h2>Agregar Ciudad</h2>
       <section id="formcity">
-        <form action="" method="post">
+        <form>
           <div class="form-group"><label for="ciudad">Ingrese la ciudad a agregar:</label></div>
-          <div class="form-group"><input type="text" name="ciudad" id="ciudad"></div>
-          <div class="form-group"><button type="submit">Agregar</button></div>
-          <div id="success" class="message">Ciudad agregada con éxito</div>
-          <div id="error" class="message">Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</div>
-          <div id="warning" class="message"> La ciudad ingresada ya se encuentra almacenada</div>
+          <div class="form-group"><input type="text" name="ciudad" id="ciudad" required></div>
+          <div class="form-group"><button type="submit" class="submit" onclick = "agregarCiudad()">Agregar</button></div>
+          <div id="success" class="message" hidden>Ciudad agregada con éxito</div>
+          <div id="error" class="message" hidden>Error: La ciudad ingresada no se encuentra en la API o se produjo un error al consultar</div>
+          <div id="warning" class="message" hidden> La ciudad ingresada ya se encuentra almacenada</div>
         </form>
       </section>
     </main>
     <footer>
       <p>Desarrollado con ♥ - LC2</p>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/pages/add-city.js" defer></script>
+    <script src="js/common.js" defer></script>
   </body>
 </html>
